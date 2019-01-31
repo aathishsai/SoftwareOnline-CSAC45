@@ -1,5 +1,5 @@
 # SoftwareOnline-CSAC45
 Aathish Kalluri
 Krishna Sai Pavuluri
-Saichand Jangam(madel)
+Saichand Jangam
 Vinay Reddy Jakka
