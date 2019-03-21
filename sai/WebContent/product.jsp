@@ -81,7 +81,7 @@ body  {
 
 <form>
 <div style="float:right">
-<input type="button" name="" value="Add Product" onclick="location.href='#';">&nbsp &nbsp&nbsp &nbsp
+<input type="button" name="" value="Add Product" onclick="location.href='addproduct.jsp';">&nbsp &nbsp&nbsp &nbsp
 <input type="button" name="" value="Logout" onclick="location.href='login.jsp';">
 </div>
 </form>
@@ -99,9 +99,9 @@ body  {
     </div>
 	</div>
 <br><br><br><br><br><br><br>
-<h2 align="center"> Product Details5 </h2>
+<h2 align="center"> Product Details </h2>
 	
-<table align="center">
+<table id="myTable" align="center">
   <tr>
     <th>Product ID</th>
     <th>Product Name</th> 
@@ -113,10 +113,9 @@ body  {
     <td><br> 1 </td>
     <td><br> MS OFFICE </td>
 	<td><br>System Software </td>
-	<td><br> $25 </td>
-	<td><br> 15 </td>
-	<td><button>edit</button></td>
-	<td><button>delete</button></td>
+	<td><br> $50 </td>
+	<td><br> 50 </td>
+	
   </tr>
   <tr>
     <td><br> 2 </td>
@@ -124,12 +123,19 @@ body  {
 	<td><br> Application Software </td>
 	<td><br> $40 </td>
 	<td><br> 10 </td>
-	<td><button>edit</button></td>
-	<td><button>delete</button></td>
+	
   </tr>
   
 </table>
+<center>
+	<p>
+<input type="button" value="Delete"
+onclick="document.getElementById('myTable').deleteRow(1)">
 
+<input type="button" value="Edit"
+onclick="document.getElementById('myTable').deleteRow(1)">
+</p>
+		
 
 </body>
 </html>
